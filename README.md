@@ -1,5 +1,10 @@
 # Sorting Algorithms
 
+[View on GitHub Pages](https://spacetoastcoasttocoast.github.io/sorting-visualizer/)
+
+#####Relative performance
+A file `allSortsOfSorts.js` is provided with the project which uses `console.time()` to demonstrate performance differences between these methods for datasets of length `n = 8` and length `n = 64`.
+
 ###Bubble sort
 A simple but inefficient algorithm that compares each element to its next neighbor and swaps their position if they are out of order. Bubble sort is fast and efficient if a list is already sorted or nearly sorted, running at O(n) in the best case; generally it is inefficient as it has no way to avoid repeating checks on elements that have been processed already, and runs at O(n^2).
 #####Implementaion

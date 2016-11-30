@@ -80,10 +80,10 @@ function init(){
     var currNum = snapshots[snapID].sorted[s];
     var arrayElementDiv = document.createElement('div');
     arrayElementDiv.innerHTML = currNum;
-    arrayElementDiv.className = "numBar";
+    arrayElementDiv.className = "numBar purpleText purpleGlow";
     arrayElementDiv.style.color = 'white';
     arrayElementDiv.style.width = '32px';
-    arrayElementDiv.style.height = (currNum * 16) + 4 + 'px';
+    arrayElementDiv.style.height = (currNum * 16) + 16 + 'px';
     arrayElementDiv.style.backgroundColor = 'rgb(' + ((currNum + 2) * 8) + ', ' + 0 + ', ' + ((currNum + 2) * 16) + ')';
     arrayDiv.appendChild(arrayElementDiv);
   }
@@ -101,7 +101,7 @@ function renderSnapshot() {
     var currIndex = snapshots[snapID].currIndex;
     var arrayElementDiv = numBars[s];
     arrayElementDiv.innerHTML = currNum;
-    arrayElementDiv.style.height = (currNum * 16) + 4 + 'px';
+    arrayElementDiv.style.height = (currNum * 16) + 16 + 'px';
     if(currNum === snapshots[snapID].sorted[currIndex]) {
       arrayElementDiv.style.backgroundColor = 'rgb(180, 40, 255)';
     } else {

@@ -3,19 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <title>Quick Sort</title>
-  <link rel="stylesheet" type="text/css" href="css/style.css"></link>
+  <link rel="stylesheet" type="text/css" href="../css/style.css"></link>
 </head>
 <body>
-<h1>Quick Sort</h1>
-  <div id="main">
-    <div id="infoBox">
-      <div id="snapInfo">
+  <h1 class="greenText">Quick Sort</h1>
+  <div id="container">
+    <div id="main">
+      <div id="infoBox" class="darkGreen greenText greenGlow">
+        <div id="snapInfo">
+        </div>
+        <div id="buttons">
+          <button id="resetButton" class="lightGreen greenGlow">Reset</button>
+          <a href="/"><button id="backButton" class="lightGreen greenGlow">Back</button></a>
+        </div>
       </div>
-      <button id="resetButton">Reset</button>
+      <div id="sorted">
+      </div>
+      <div id="array">
+      </div>
     </div>
-    <div id="sorted">
-    </div>
-    <div id="array">
+    <div id="description" class="mediumGreen greenGlow">
+      A recursive divide-and-conquer algorithm that subdivides an array into single-element subsections, using a "pivot point" against which the other elements are compared. Numbers lesser than the pivot are placed in a subsection to its left, and numbers greater than or equal to the pivot are placed in a subsection to its right. When all subsections have been divided and sorted, they are joined back together in their proper order. Quicksort works most efficiently when the pivot point is close to the median value of the dataset, performing close to O(n log n); in the case where the pivot is always the smallest value, it performs at O(n^2) due to not being able to delegate anything to the left side partition.
     </div>
   </div>
   <script type="text/javascript" src="qsort-index.js"></script>

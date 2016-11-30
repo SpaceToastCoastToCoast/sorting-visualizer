@@ -95,10 +95,10 @@ function init(){
     var currNum = snapshots[snapID].sorted[s];
     var arrayElementDiv = document.createElement('div');
     arrayElementDiv.innerHTML = currNum;
-    arrayElementDiv.className = "numBar";
+    arrayElementDiv.className = "numBar pinkText pinkGlow";
     arrayElementDiv.style.color = 'white';
     arrayElementDiv.style.width = '32px';
-    arrayElementDiv.style.height = (currNum * 16) + 4 + 'px';
+    arrayElementDiv.style.height = (currNum * 16) + 16 + 'px';
     arrayElementDiv.style.backgroundColor = 'rgb(' + ((currNum + 2) * 16) + ', ' + 0 + ', ' + ((currNum + 2) * 8) + ')';
     arrayDiv.appendChild(arrayElementDiv);
   }
@@ -115,7 +115,7 @@ function renderSnapshot() {
     var currNum = snapshots[snapID].sorted[s];
     var arrayElementDiv = numBars[s];
     arrayElementDiv.innerHTML = currNum;
-    arrayElementDiv.style.height = (currNum * 16) + 4 + 'px';
+    arrayElementDiv.style.height = (currNum * 16) + 16 + 'px';
     arrayElementDiv.style.backgroundColor = 'rgb(' + ((currNum + 2) * 16) + ', ' + 0 + ', ' + ((currNum + 2) * 8) + ')';
   }
   snapInfoDiv.innerHTML = 'Swaps: ' + snapshots[snapID].swaps +'<br />Passes: ' + snapshots[snapID].passes;

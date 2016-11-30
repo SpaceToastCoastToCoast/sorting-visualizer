@@ -2,17 +2,199 @@
 
 html {
   background-color: #000000;
-  padding-top: 8px;
   font-family: "Comfortaa", sans-serif;
   font-size: 18px;
+  margin: 0px;
+  padding: 0px;
 }
+
 h1 {
+  width: 100%;
   text-align: center;
-  margin-top: 4px;
+  margin-top: 12px;
   font-weight: bolder;
   color: white;
-  text-shadow: 0 0 6px #FF0088, 0 0 12px #FF0088, 0 0 2px #FFFFFF;
 }
 div a {
   color: white;
+}
+
+.links {
+  width: 400px;
+  margin: auto;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #220011;
+}
+
+.links div {
+  width: 192px;
+  text-align: center;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  margin: 4px;
+  background-color: #440022;
+}
+
+.links div:hover {
+  transition: text-shadow 0.5s ease-in-out;
+  text-shadow: 0 0 6px #FF0088, 0 0 12px #FF0088, 0 0 2px #FFFFFF;
+}
+.bubble {
+  margin: 0px;
+  padding: 0px;
+  min-height: 100%;
+  width: 100%;
+  background-image: url("bubble.jpg");
+  background-size: cover;
+}
+#buttons {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-around;
+}
+#container {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  justify-content: center;
+}
+#main {
+  display: block;
+  width: 500px;
+  min-width: 500px;
+  margin: 24px;
+}
+#description {
+  font-size: 16px;
+  margin: 24px;
+  padding: 60px;
+  width: 400px;
+  box-sizing: border-box;
+  border-radius: 200px;
+  display: block;
+  color: white;
+  border: 2px solid white;
+}
+#array {
+  display: flex;
+  position: relative;
+  margin: auto;
+  width: 360px;
+  min-height: 200px;
+  align-items: flex-end;
+  flex-flow: row nowrap;
+}
+#infoBox {
+  position: relative;
+  text-align: center;
+  margin: auto;
+  width: 160px;
+  color: white;
+  padding: 8px;
+  border-radius: 16px;
+  border: 2px solid white;
+}
+.numBar {
+  position: relative;
+  margin: 4px;
+  box-sizing: border-box;
+  max-width: 32px;
+  font-weight: bold;
+  border: 2px solid white;
+  border-radius: 16px;
+  display: inline-flex;
+  text-align: center;
+  padding: 4px;
+  padding-bottom: 8px;
+  transition: height 0.4s, background-color 0.5s;
+}
+#leftDiv, #rightDiv {
+  min-height: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: flex-end;
+}
+#pivotDiv {
+  min-height: 100%;
+  width: 32px;
+  box-sizing: border-box;
+  flex-shrink: 0;
+}
+button {
+  font-family: "Comfortaa", sans-serif;
+  margin: 4px;
+  padding: 4px;
+  padding-right: 8px;
+  padding-left: 8px;
+  border-radius: 8px;
+  color: white;
+  border: 2px solid white;
+}
+
+.pinkText {
+  text-shadow: 0 0 6px #FF0088, 0 0 12px #FF0088, 0 0 2px #FFFFFF;
+}
+.pinkGlow {
+  box-shadow: 0 0 6px #FF0088, 0 0 12px #FF0088, 0 0 2px #FFFFFF;
+}
+.darkPink {
+  background-color: #440022;
+}
+.mediumPink {
+  background-color: #aa0055;
+}
+.lightPink {
+  background-color: #cc0066;
+}
+
+.blueText {
+  text-shadow: 0 0 6px #0088FF, 0 0 12px #0088FF, 0 0 2px #FFFFFF;
+}
+.blueGlow {
+  box-shadow: 0 0 6px #0088FF, 0 0 12px #0088FF, 0 0 2px #FFFFFF;
+}
+.darkBlue {
+  background-color: #002244;
+}
+.mediumBlue {
+  background-color: #0055aa;
+}
+.lightBlue {
+  background-color: #0066cc;
+}
+
+.purpleText {
+  text-shadow: 0 0 6px #8800FF, 0 0 12px #8800FF, 0 0 2px #FFFFFF;
+}
+.purpleGlow {
+  box-shadow: 0 0 6px #8800FF, 0 0 12px #8800FF, 0 0 2px #FFFFFF;
+}
+.darkPurple {
+  background-color: #220044;
+}
+.mediumPurple {
+  background-color: #5500aa;
+}
+.lightPurple {
+  background-color: #6600cc;
+}
+
+.greenText {
+  text-shadow: 0 0 6px #00FF88, 0 0 12px #00FF88, 0 0 2px #FFFFFF;
+}
+.greenGlow {
+  box-shadow: 0 0 6px #00FF88, 0 0 12px #00FF88, 0 0 2px #FFFFFF;
+}
+.darkGreen {
+  background-color: #004422;
+}
+.mediumGreen {
+  background-color: #00aa55;
+}
+.lightGreen {
+  background-color: #00cc66;
 }

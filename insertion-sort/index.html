@@ -3,17 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <title>Insertion Sort</title>
-  <link rel="stylesheet" type="text/css" href="css/style.css"></link>
+  <link rel="stylesheet" type="text/css" href="../css/style.css"></link>
 </head>
 <body>
-<h1>Insertion Sort</h1>
-  <div id="main">
-    <div id="infoBox">
-      <div id="snapInfo">
+  <h1 class="blueText">Insertion Sort</h1>
+  <div id="container">
+    <div id="main">
+      <div id="infoBox" class="darkBlue blueText blueGlow">
+        <div id="snapInfo">
+        </div>
+        <div id="buttons">
+          <button id="resetButton" class="lightBlue blueGlow">Reset</button>
+          <a href="/"><button id="backButton" class="lightBlue blueGlow">Back</button></a>
+        </div>
       </div>
-      <button id="resetButton">Reset</button>
+      <div id="array">
+      </div>
     </div>
-    <div id="array">
+    <div id="description" class="blueGlow mediumBlue">
+      Insertion sort iterates through a dataset, partially sorting it as it goes along. When it finds a node that is in the wrong order relative to the value before it, it pulls out that node and inserts it in properly sorted order in the partially sorted section. As it keeps the values that have already been processed towards the head end of the array, it can be used for data that is streamed in while it is still being processed. Insertion sort performs more efficiently than the above methods in small datasets, reaching O(n) performance, but it performs at O(n^2) on the average case and thus is impractical for large datasets.
     </div>
   </div>
   <script type="text/javascript" src="insertion-index.js"></script>

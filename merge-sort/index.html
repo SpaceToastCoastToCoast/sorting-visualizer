@@ -3,17 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <title>Merge Sort</title>
-  <link rel="stylesheet" type="text/css" href="css/style.css"></link>
+  <link rel="stylesheet" type="text/css" href="../css/style.css"></link>
 </head>
 <body>
-<h1>Merge Sort</h1>
-  <div id="main">
-    <div id="infoBox">
-      <div id="snapInfo">
+  <h1>Merge Sort</h1>
+  <div id="container">
+    <div id="main">
+      <div id="infoBox">
+        <div id="snapInfo">
+        </div>
+        <div id="buttons">
+          <button id="resetButton">Reset</button>
+          <a href="/"><button id="backButton">Back</button></a>
+        </div>
       </div>
-      <button id="resetButton">Reset</button>
+      <div id="array">
+      </div>
     </div>
-    <div id="array">
+    <div id="description">
+      Another recursive divide-and-conquer algorithm that subdivides an array into equally-sized partitions, whose first elements are compared against each other at each step and swapped if they are out of order. Merge sort also performs efficiently, with both worst-case and best-case performing at O(n log n).
     </div>
   </div>
   <script type="text/javascript" src="msort-index.js"></script>

@@ -90,26 +90,14 @@ function init(){
   leftDiv.innerHTML = "";
   rightDiv.innerHTML = "";
 
-  // for(var s in snapshots[snapID].sorted) {
-  //   var currNum = snapshots[snapID].sorted[s];
-  //   var arrayElementDiv = document.createElement('div');
-  //   arrayElementDiv.innerHTML = currNum;
-  //   arrayElementDiv.className = "numBar";
-  //   arrayElementDiv.style.color = 'white';
-  //   arrayElementDiv.style.width = '32px';
-  //   arrayElementDiv.style.height = (currNum * 16) + 4 + 'px';
-  //   arrayElementDiv.style.backgroundColor = 'rgb(' + 0 + ', ' + ((currNum + 2) * 16) + ', ' + ((currNum + 2) * 8) + ')';
-  //   sortedDiv.appendChild(arrayElementDiv);
-  // }
-
   for(var l in snapshots[snapID].left) {
     var leftCurrNum = snapshots[snapID].left[l];
     var leftArrayElementDiv = document.createElement('div');
     leftArrayElementDiv.innerHTML = leftCurrNum;
-    leftArrayElementDiv.className = "numBar";
+    leftArrayElementDiv.className = "numBar greenText greenGlow";
     leftArrayElementDiv.style.color = 'white';
     leftArrayElementDiv.style.width = '32px';
-    leftArrayElementDiv.style.height = (leftCurrNum * 16) + 4 + 'px';
+    leftArrayElementDiv.style.height = (leftCurrNum * 16) + 16 + 'px';
     leftArrayElementDiv.style.backgroundColor = 'rgb(' + 0 + ', ' + ((leftCurrNum + 2) * 16) + ', ' + ((leftCurrNum + 2) * 8) + ')';
     leftDiv.appendChild(leftArrayElementDiv);
   }
@@ -119,10 +107,10 @@ function init(){
   pivotDiv.id = "pivotDiv";
   var pivotNum = snapshots[snapID].pivot;
     pivotDiv.innerHTML = pivotNum;
-    pivotDiv.className = "numBar";
+    pivotDiv.className = "numBar greenText greenGlow";
     pivotDiv.style.color = 'white';
     pivotDiv.style.width = '32px';
-    pivotDiv.style.height = (pivotNum * 16) + 4 + 'px';
+    pivotDiv.style.height = (pivotNum * 16) + 16 + 'px';
     pivotDiv.style.backgroundColor = 'rgb(' + 0 + ', ' + ((pivotNum + 2) * 16) + ', ' + ((pivotNum + 2) * 8) + ')';
 
   arrayDiv.appendChild(pivotDiv);
@@ -131,10 +119,10 @@ function init(){
     var rightCurrNum = snapshots[snapID].right[r];
     var rightArrayElementDiv = document.createElement('div');
     rightArrayElementDiv.innerHTML = rightCurrNum;
-    rightArrayElementDiv.className = "numBar";
+    rightArrayElementDiv.className = "numBar greenText greenGlow";
     rightArrayElementDiv.style.color = 'white';
     rightArrayElementDiv.style.width = '32px';
-    rightArrayElementDiv.style.height = (rightCurrNum * 16) + 4 + 'px';
+    rightArrayElementDiv.style.height = (rightCurrNum * 16) + 16 + 'px';
     rightArrayElementDiv.style.backgroundColor = 'rgb(' + 0 + ', ' + ((rightCurrNum + 2) * 16) + ', ' + ((rightCurrNum + 2) * 8) + ')';
     rightDiv.appendChild(rightArrayElementDiv);
   }
@@ -154,26 +142,14 @@ function renderSnapshot() {
   pivotDiv.innerHTML = "";
   rightDiv.innerHTML = "";
 
-  // for(var s in snapshots[snapID].sorted) {
-  //   var currNum = snapshots[snapID].sorted[s];
-  //   var arrayElementDiv = document.createElement('div');
-  //   arrayElementDiv.innerHTML = currNum;
-  //   arrayElementDiv.className = "numBar";
-  //   arrayElementDiv.style.color = 'white';
-  //   arrayElementDiv.style.width = '32px';
-  //   arrayElementDiv.style.height = (currNum * 16) + 4 + 'px';
-  //   arrayElementDiv.style.backgroundColor = 'rgb(' + 0 + ', ' + ((currNum + 2) * 16) + ', ' + ((currNum + 2) * 8) + ')';
-  //   sortedDiv.appendChild(arrayElementDiv);
-  // }
-
   for(var l in snapshots[snapID].left) {
     var leftCurrNum = snapshots[snapID].left[l];
     var leftArrayElementDiv = document.createElement('div');
     leftArrayElementDiv.innerHTML = leftCurrNum;
-    leftArrayElementDiv.className = "numBar";
+    leftArrayElementDiv.className = "numBar greenText greenGlow";
     leftArrayElementDiv.style.color = 'white';
     leftArrayElementDiv.style.width = '32px';
-    leftArrayElementDiv.style.height = (leftCurrNum * 16) + 4 + 'px';
+    leftArrayElementDiv.style.height = (leftCurrNum * 16) + 16 + 'px';
     leftArrayElementDiv.style.backgroundColor = 'rgb(' + 0 + ', ' + ((leftCurrNum + 2) * 16) + ', ' + ((leftCurrNum + 2) * 8) + ')';
     leftDiv.appendChild(leftArrayElementDiv);
   }
@@ -181,10 +157,10 @@ function renderSnapshot() {
   //create div for pivot
   var pivotNum = snapshots[snapID].pivot;
     pivotDiv.innerHTML = pivotNum;
-    pivotDiv.className = "numBar";
+    pivotDiv.className = "numBar greenText greenGlow";
     pivotDiv.style.color = 'white';
     pivotDiv.style.width = '32px';
-    pivotDiv.style.height = (pivotNum * 16) + 4 + 'px';
+    pivotDiv.style.height = (pivotNum * 16) + 16 + 'px';
     pivotDiv.style.backgroundColor = 'rgb(40, 255, 160)';
 
   arrayDiv.appendChild(pivotDiv);
@@ -193,10 +169,10 @@ function renderSnapshot() {
     var rightCurrNum = snapshots[snapID].right[r];
     var rightArrayElementDiv = document.createElement('div');
     rightArrayElementDiv.innerHTML = rightCurrNum;
-    rightArrayElementDiv.className = "numBar";
+    rightArrayElementDiv.className = "numBar greenText greenGlow";
     rightArrayElementDiv.style.color = 'white';
     rightArrayElementDiv.style.width = '32px';
-    rightArrayElementDiv.style.height = (rightCurrNum * 16) + 4 + 'px';
+    rightArrayElementDiv.style.height = (rightCurrNum * 16) + 16 + 'px';
     rightArrayElementDiv.style.backgroundColor = 'rgb(' + 0 + ', ' + ((rightCurrNum + 2) * 16) + ', ' + ((rightCurrNum + 2) * 8) + ')';
     rightDiv.appendChild(rightArrayElementDiv);
   }

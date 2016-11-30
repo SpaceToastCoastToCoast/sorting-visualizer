@@ -1,5 +1,7 @@
 # Sorting Algorithms
 
+[View on GitHub Pages](https://spacetoastcoasttocoast.github.io/sorting-visualizer/)
+
 #####Relative performance
 A file `allSortsOfSorts.js` is provided with the project which uses `console.time()` to demonstrate performance differences between these methods for datasets of length `n = 8` and length `n = 64`.
 
